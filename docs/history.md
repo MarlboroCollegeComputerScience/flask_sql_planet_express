@@ -30,19 +30,19 @@ Then my regular work flow is
     1.9.1
     $ virtualenv -p python2.7 env
 
-    # Put an alias in a shell startup file (i.e. ~/.profile or ~/.bashrc)
-    # that lets you type "activate" in a project folder to activate virtualenv.
-    #  --- ~/.profile ---
-    #  alias activate=". env/bin/activate"
-    #  ---------------------
-    $ alias activate     # check to see if this alias is known.
-    alias activate='. env/bin/activate'
+Put an alias in a shell startup file (i.e. ~/.profile or ~/.bashrc)
+that lets you type "activate" in a project folder to activate virtualenv.
+
+    # ~/.profile ---
+    alias activate=". env/bin/activate"
+
+Then once that alias is on (new shell or ". ~/.profile")
+
     $ activate
     (env)$               # virtualenv prompt
     (env)$ which python  # Now using local python?
     ./env/bin/python     # Yup.
 
-## 
 
 
 
