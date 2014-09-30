@@ -1,0 +1,97 @@
+/*
+ * default.css
+ *
+ * font stacks :
+ *   'Averia Serif Libre', serif;
+ *   'Averia Libre', sans-serif;
+ * 
+ * Jim Mahoney | cs.marlboro.edu | MIT License
+ */
+
+/* twitter bootstrap example */
+body {
+   padding-top: 1em;
+   padding-bottom: 1em;
+   /* font-family: 'Droid Serif', serif; */
+   font-family: 'Droid Sans', sans-serif;
+   background-color: #9da0c9;
+}
+
+.logo {
+   height: 3em;
+   padding: 3px;
+}
+
+/* login */
+.span2 {
+   font-family: 'Droid Sans', sans-serif;
+}
+
+.tagline {
+   font-size: 1.2em;
+   color: #dcd0ff;
+}
+
+.navbar {
+   font-size: 1.5em;
+}
+.dropdown-menu {
+   font-size: 0.75em;
+}
+
+.nav-collapse {
+   margin-top: 0.5em;
+}
+
+.hero-unit {
+
+ background: #45568a; 
+ /* for IE */
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#062261', endColorstr='#9da0c9'); 
+ /* for webkit browsers */
+ background: -webkit-gradient(linear, left top, right bottom, from(#062261), to(#9da0c9)); 
+ /* for firefox 3.6+ */
+ background: -moz-linear-gradient(to bottom right,  #062261,  #9da0c9); 
+
+
+}
+
+footer {
+   float: right;
+}
+
+footer p a {
+   color: #062261;
+}
+
+/*
+
+   a:link {color: }       unvisited link 
+   a:visited {color: #9da0c9}   visited link 
+   a:hover {color: #9da0c9; text-decoration: underline;}      mouse over link 
+   a:active {color: #9da0c9;}     selected link 
+*/
+
+
+/*
+
+body {
+   width: 90%; 
+   margin: 1em auto; 
+   font-family: 'Averia Serif Libre', serif;
+}
+
+#main {
+   padding: 0 1em;
+}
+
+footer {
+   border-top: 1px solid grey;
+} 
+
+footer div {
+   float:right;
+   padding: 0.5em; 
+}
+
+*/

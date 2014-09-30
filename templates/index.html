@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Planet Express (the web framework demo)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web framework demo">
+    <meta name="author" content="Jim Mahoney">
+    <link rel="stylesheet" 
+	  href='{{"bootstrap/css/bootstrap.min.css"| static_url}}'>
+    <link rel="stylesheet" 
+	  href='{{"bootstrap/css/bootstrap.min.css"| static_url}}'>
+    <link rel="stylesheet" 
+	  href='{{"bootstrap/css/bootstrap-responsive.css"| static_url}}'>
+    <link rel="stylesheet" 
+	  href='{{"planet_express.css"| static_url}}'>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href='{{"media/favicon.ico"| static_url}}'>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" 
+	  href='{{"media/apple-touch-icon-144-precomposed.png"| static_url}}'>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" 
+	  href='{{"media/apple-touch-icon-114-precomposed.png"| static_url}}'>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" 
+	  href='{{"media/apple-touch-icon-72-precomposed.png"| static_url}}'>
+    <link rel="apple-touch-icon-precomposed" 
+	  href='{{"media/apple-touch-icon-57-precomposed.png"| static_url}}'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' 
+          rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <img class="logo pull-left" src='{{"media/planet_express_logo.png" | static_url}}'>
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your Packages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="ship">Ship</a></li>
+                  <li><a href="track">Track</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="story">WTF !?</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">The Crew</li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">...</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Username">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Login</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit"> 
+
+	<img src='{{"media/planet_express_ship.png"|static_url}}'>
+
+	<p class="tagline">
+	  Planet Express.<br> 
+	  Our crew is replaceable.<br>
+	  Your package isn't.
+	</p>
+     
+	<p><a href="{{url_for('about')}}"
+	      class="btn pull-right btn-primary btn-large">WTF? &raquo;</a></p>
+
+      </div> 
+
+      <footer>
+        <p><a href="mailto:mahoney@marlboro.edu">Jim Mahoney</a> | 
+	  <a href="http://marlboro.edu">Marlboro College</a> | 
+	  <a href="http://cs.marlboro.edu/courses/fall2012/web/home"
+	     >Web Programming class</a> | 
+	  <a href="http://opensource.org/licenses/MIT">MIT License</a> |
+	  Nov 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src='{{"lib/underscore-min.js"| static_url}}'></script>
+    <script src='{{"lib/jquery-min.js"| static_url}}'></script>
+    <script src='{{"bootstrap/js/bootstrap.min.js"| static_url}}'></script>
+    <script src='{{"planet_express.js"| static_url}}'></script>
+  </body>
+</html>

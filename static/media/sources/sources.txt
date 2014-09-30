@@ -1,0 +1,19 @@
+
+planet express logo yellow/red/black with (cc) license
+http://www.flickr.com/photos/patdavid/7562368060/
+saved as planet_express_logo.jpeg
+I cleaned it up in gimp :
+added transparency, selected, feathered, cleared background, 
+set inside of letters to yellow, saved as png.
+
+planet express ship jpeg, 800-ish with gradient blue background
+http://newsentimentality.wordpress.com/2012/04/09/space-truckin/
+saved as planet_express_ship.jpeg
+I cleaned this one up in gimp similarly.
+
+Copyright on all this stuff is clearly with comedy central since they
+own the futurama series. All the sites above are secondary sources,
+copying or reposting those images.  It's pretty clear that for my
+"demonstrate a sql database site for a college class", using these
+falls easily under fair use.
+
