@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# create and populate the database
+#
+ sqlite3 planet_express.db < create_planet_express.sql 
+ sqlite3 planet_express.db < populate_planet_express.sql 
+

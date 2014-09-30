@@ -1,0 +1,59 @@
+
+ This is adapted from 
+ http://en.wikibooks.org/wiki/SQL_Exercises/Planet_Express
+
+ PK = primary key; FK = foreign key
+
+ I've adopted several capitalization and naming conventions 
+ to try to fit SqlAlchemy & SqlSoup's relations nicely into python's classes.
+
+ * First, table names correspond to python classes, and so are capitalized.
+
+ * Second, field names correspond to python methods, and so are lowercase.
+
+ * Third, all foreign keys are explicitly named e.g. Object.field_id 
+   so that a corresponding Object.field relation can be defined
+   that returns a SqlSoup Object rather than just the integer id.
+
+ * Fourth, the date format was "3004/11/05", which is 
+   not consistent with what sqlite (and other databases) expect,
+   which is "YYYY-MM-DD" (ISO-8601). It's been changed.
+
+ The tables and their columns are :
+
+   Employee
+     employee_id	PK
+     name
+     position
+     salary
+     remarks
+
+   Has_clearance
+     employee_id	PK,  FK Employee
+     planet_id		PK,  FK Planet
+     level
+
+   Shipment
+     shipment_id 	PK
+     date
+     manager_id		PK, FK Employee
+     planet_id		    FK Planet
+
+   Planet
+     planet_id      	PK
+     name
+     coordinates
+
+   Package
+     shipment_id       	PK, FK Shipment
+     package_number   	PK
+     contents
+     weight
+     sender_id		    FK Client
+     recipient_id	    FK Client
+
+   Client
+     account_number	PK
+     name
+
+Jim Mahoney | mahoney@marlboro.edu | MIT License
