@@ -1,0 +1,18 @@
+# requirements.txt
+# ================
+#
+# You'll need to install these manually.
+# ----------------------
+# git >= 1.7      
+# sqlite3 >= 3.8
+# virtualenv >= 1.9
+# python >= 2.7.8
+# The rest can be installed automatically with:
+# ---------------------------------------------
+#   $ activate    # i.e.  ". env/bin/activate"
+#   (env)$ pip install -r requirements.txt
+
+Flask >= 0.10
+SQLAlchemy >= 0.9
+Flask-WTF >= 0.9.5
+
