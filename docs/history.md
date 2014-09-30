@@ -55,8 +55,42 @@ the requirements.txt file.
 
     (env)$ pip install -r requirements.txt
 
+The database can then be built with
 
+    (env)$ cd database
+    (env)$ ./init_db
+    (env)$ cd ..
 
+As much of this as was working from the 2012 web development
+class I've copied here, namely the splash page and the data model.
+
+The SQLAlchemy model in src/model.py has doctests which can be seen 
+to run with
+
+    (env)$ python src/model.py -v
+
+Any of these tests or other interactive data munging can
+also be done from the console.
+
+    (env)$ ./console
+    Welcome to planet_express.
+    >>> 
+    >>> fry = Employee.find_by('name', 'Phillip J. Fry')
+    >>> fry
+    <Employee name='Phillip J. Fry' id=4343294736>
+    >>> fry.shipments
+    [<Shipment id=4343295824>, <Shipment id=4343374096>]
+    >>> fry.clearances[0].planet.name
+    <Planet name='Omicron Persei 8' id=4343375760>
+
+Finally, to see it run, start the server and point a browser
+at the right URL. The flask server has a nice debugger - 
+try putting an error in one of the templates to see it 
+do its thing.
+
+    (env)$ python planet_express.py
+    * Running on http://0.0.0.:8090/
+    * Restarting with reloader
 
 [github repo]: https://github.com/MarlboroCollegeComputerScience/flask_sql_planet_express
 

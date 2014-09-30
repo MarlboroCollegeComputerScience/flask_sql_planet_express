@@ -2,15 +2,17 @@
 # -- coding: utf-8 --
 """
  planet_express.py
- See ./README.md
+
+ See ./README.md and docs/history.md for all an overview.
+
  Jim Mahoney | mahoney@marlboro.edu | Sep 2014 | MIT License
 """
 
 from flask import Flask, request, session, g, redirect, \
-                  url_for, abort, render_template, flash
-from src.utilities import secret_key
+    url_for, abort, render_template, flash
 from src.model import db_session, \
     Employee, HasClearance, Shipment, Planet, Package, Client
+from src.utilities import secret_key
 
 app = Flask(__name__)
 
@@ -38,7 +40,6 @@ def index():
 @app.route('/about')
 def about():
     return render_template('index.html')
-
 
 if __name__ == '__main__':
     app.secret_key = secret_key
